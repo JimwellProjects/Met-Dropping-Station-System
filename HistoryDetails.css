@@ -1,0 +1,181 @@
+body{
+	font-family: sans-serif;
+	background:#303030;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+.sidebar{
+	position: fixed;
+	left: -250px;
+	width: 250px;
+	height: 100%;
+	background:	#fabb34;
+	transition: all .5s ease;
+
+}
+.sidebar header{
+	font-size: 22px;
+	color: white;
+	text-align: center;
+	line-height: 71px;
+	background: #282828;
+	user-select: none;
+	margin-left: -20px;
+		height: 80px;
+}
+
+.sidebar ul a{
+	display: block;
+	height: 100%;
+	width: 100%;
+	line-height: 65px;
+	font-size: 20px;
+	color: white;
+	padding-left: 40px;
+	box-sizing: border-box;
+	border-top: 1px solid rgba(255,255,255,.1);
+	border-bottom: 1px solid black;
+	transition: .4s;
+	text-decoration: none;
+}
+
+ul li:hover a{
+	padding-left: 50px;
+}
+
+.sidebar ul a i{
+	margin-right: 16px;
+}
+
+#check{
+	display: none;
+}
+
+label #btn, label #cancel{
+	position: absolute;
+	cursor: pointer;
+	border-radius: 3px;
+}
+
+label #btn{
+	left: 40px;
+	top: 15px;
+	font-size: 35px;
+	color: #eb8d00;
+	padding: 6px 12px;
+	transition: all .5s;
+	background-attachment: fixed;
+	position: fixed;
+}
+
+label #cancel{
+	z-index: 1111;
+	left: -195px;
+	top: 17px;
+	font-size: 30px;
+	background: #eb8d00;
+	padding: 5px 6px;
+	transition: all .5s ease;
+	position: fixed;
+	margin-left: 20px;
+}
+
+#check:checked ~ .sidebar{
+	left: 0;
+}
+
+#check:checked ~ label #btn{
+	left: 250px;
+	opacity: 0;
+	pointer-events: none;
+}
+
+#check:checked ~ label #cancel{
+	left: 195px;
+
+}
+
+
+nav{
+	  text-align: center;
+	  position: fixed;
+	  width: 100%;
+	  transform: (-50%,-50%);
+	  height: 80px;
+}
+
+nav a{
+	  text-decoration: none;
+	  font-size: 100%;
+	  padding: 20px;
+	  color:#eb8d00;
+	  top: 100px;
+	  float: left;
+	  margin-top: 10px;
+}
+
+header nav a:hover{
+  background-color: #FF8C00;
+  color: white;
+  padding:20px;
+  border-radius: 10px;
+}
+
+
+.logo{
+	width: 8%;
+	height:85%;
+	border-radius: 10px;
+	margin-top: 5px;
+	margin-left: -20%;
+}
+
+.met{
+	font-size: 10px;
+	color:#eb8d00;
+	margin-top: -40px;
+	margin-left: 90%;
+	font-size: 15px;
+}
+.a{
+	font-size: 50px;
+	color:#eb8d00;
+	margin-top: -45px;
+	margin-right: 10%;
+}
+
+.search-txt{
+	width: 20%;
+	height: 40px;
+	margin-top: 14px;
+	border-radius: 10px;
+	border-color:#eb8d00; 
+	border-width: 2px;
+
+}
+
+
+.historycontainer{
+  width: 75%;
+  border: ridge;
+  border-style: inset;
+  border-width: 1px;
+  background-color: gray;
+  background: rgb(0,0,0);
+  background: rgba(0,0,0,0.3);
+  margin-right:12.5%;
+  margin-left: 12.5%;
+  margin-top: 1%;
+  height: 100%;
+  margin-bottom: 30px;
+  border-radius: 5px;
+
+}
+
+
+
